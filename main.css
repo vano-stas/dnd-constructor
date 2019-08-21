@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper-container {
+	height: 100vh;
+	width: 100%;
+}
+
+.main-content {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.tools {
+	padding-top: 10px;
+	height: 100%;
+	width: 280px;
+	background: #ccc;
+	z-index: 200;
+	display: grid;
+	grid-template-rows: repeat(5, 12%);
+	grid-template-columns: repeat(2, 40%);
+	grid-gap: 10px;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+#hide-tools {
+	z-index: 100;
+	height: 70px;
+	background: #ccc;
+	top: 50%;
+	position: relative;
+	transform: translate(0, -50%);
+}
+
+.work-place {
+	height: 100%;
+	flex-grow: 1;
+
+	box-shadow: 1px 1px 3px #ccc;
+	background-image: 
+		linear-gradient(lightgrey 1px, transparent 1px),
+		linear-gradient(90deg, lightgrey 1px, transparent 1px),
+		linear-gradient(lightgrey 1px, transparent 1px),
+		linear-gradient(90deg, lightgrey 1px, transparent 1px);
+	background-size: 
+		10px 10px,
+		10px 10px,
+		50px 50px,
+		50px 50px;
+	background-position: 0 0 -1 -1;
+}
+
+.base-dragged {
+	user-select: none;
+    height: 60px;
+    width: 110px;
+	background: white;
+	color: rgb(105, 105, 105);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.icon-button {
+	font-size: 24px;
+}
+
+.dragged {
+	height: 15%;
+	width: 40%;
+	background: white;
+    color: red;
+	cursor: pointer;
+}
+
+.btn-head {
+	transform: translate(-50%, -50%);
+}
+
+.input-edit {
+	position: relative;
+	background: transparent;
+    border: none;
+    width: 80px;
+}
+
+.input-edit :focus {
+	outline: none;
+}

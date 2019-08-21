@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag&Drop</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="wrapper-container">
+		<main class="main-content">
+			<div id="dropzone" class="tools">
+				<div id='head-button' class="base-dragged">
+					<i class="fa fa-font icon-button"></i>
+					<span>Заголовок</span>
+				</div>
+				<div id='image-button' class="base-dragged">
+						<i class="fa fa-image icon-button"></i>
+						<span>Изображение</span>
+				</div>
+				<div id='video-button' class="base-dragged">
+						<i class="fa fa-film icon-button"></i>
+						<span>Видео</span>
+				</div>
+				<div id='btn-button' class="base-dragged">
+						<i class="fa fa-mouse-pointer icon-button"></i>
+						<span>Кнопка</span>
+				</div>
+			</div>
+			<div id="work-zone" class="work-place">
+				<button id="hide-tools" class="btn btn-sm"><</button>
+			</div>
+		</main>
+	</div>
+	<!-- <div id="dropzone">
+		<div class="base-dragged"></div>
+	</div> -->
+
+	<script src="./index.js"></script>
+</body>
+</html>
